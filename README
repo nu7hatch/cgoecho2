@@ -1,7 +1,14 @@
 Echo with CGO
 =============
 
-It's a simple `echo` command demonstrating how to write C extensions for Go apps.
-You can build install it with:
+It's a little bit more complicated `echo` command demonstrating how to write C 
+extensions for Go apps using Makefiles to make the package maintainance easier. 
+You can install it with:
 
-    $ go install github.com/nu7hatch/cgoecho 
+    $ go install github.com/nu7hatch/cgoecho2
+
+Or build manually:
+
+    $ git clone git://github.com/nu7hatch/cgoecho2.git
+    $ cd cgoecho2
+    $ make
